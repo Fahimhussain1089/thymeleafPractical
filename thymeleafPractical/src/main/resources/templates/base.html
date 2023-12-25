@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+ th:fragment="layout(content)">
+<head>
+	<meta charset="UTF-8" />
+	<title>Base this base pagae</title>
+	
+	<link rel="stylesheet" ht:ref="@{/style.css}"/>
+	
+</head>
+<body>
+	<h1>this is common header</h1>
+	
+	<div th:replace="${content}"></div>
+	
+</body>
+
+</html>
